@@ -6,13 +6,14 @@ connectToMongo();
 const app = express();
 const port = 5000;
 
-app.use(cors(
-  {
-    origin: ["https://my-notebook-frontend.vercel.app"],
-    methods: ["POST", "GET","PUT","DELETE"],
-    credentials: true
-  }
-))
+app.use(cors({
+  origin: ["https://my-notebook-frontend.vercel.app"],
+  methods: ["POST", "GET", "PUT", "DELETE"],
+  credentials: true,
+  // Additional headers
+  exposedHeaders: ["Access-Control-Allow-Origin"],
+}));
+
 app.use(express.json())
 
 // Available Routes
