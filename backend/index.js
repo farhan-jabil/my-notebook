@@ -8,7 +8,7 @@ const port = 5000;
 
 app.use(cors(
   {
-    origin:   [""],
+    origin: ["https://my-notebook-frontend.vercel.app/"],
     methods: ["POST", "GET","PUT","DELETE"],
     credentials: true
   }
