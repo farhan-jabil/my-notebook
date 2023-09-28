@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import UserContext from "./UserContext";
 
 const UserState = (props) => {
-  const host = "https://my-notebook-nu.vercel.app";
+  const host = "my-notebook-backend-beryl.vercel.app";
 
   // Define state to store user information
   const [userData, setUserData] = useState(null);
